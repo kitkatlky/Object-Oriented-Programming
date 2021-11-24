@@ -51,12 +51,15 @@ as computer-assisted instruction (CAI).
 i)  Write a program that will help an elementary school student learn multiplication.
     Use a Random object to produce two positive one-digit integers. The program
     should then prompt the user with a question, such as
+    
     How much is 6 times 7?
+    
     The student then inputs the answer. Next, the program checks the student’s
     answer. If it’s correct, display the message "Very good!" and ask another
     multiplication question. If the answer is wrong, display the message "No. Please
     try again." and let the student try the same question repeatedly until the
     student finally gets it right.
+    
     A separate method should be used to generate each new question. This method
     should be called once when the application begins execution and each time the
     user answers the question correctly.
@@ -64,16 +67,19 @@ i)  Write a program that will help an elementary school student learn multiplica
 ii) One problem in CAI environments is student fatigue. This can be reduced by
     varying the computer’s responses to hold the student’s attention. Modify the
     program of i) so that various comments are displayed for each answer as follows:
+    
     Possible responses to a correct answer:
     Very good!
     Excellent!
     Nice work!
     Keep up the good work!
+    
     Possible responses to an incorrect answer:
     No. Please try again.
     Wrong. Try once more.
     Don't give up!
     No. Keep trying.
+    
     Use random-number generation to choose a number from 1 to 4 that will be used
     to select one of the four appropriate responses to each correct or incorrect
     answer. Use if-else statement to issue the responses.
@@ -81,10 +87,82 @@ ii) One problem in CAI environments is student fatigue. This can be reduced by
 iii)  More sophisticated computer-assisted instruction systems monitor the student’s
       performance over a period of time. Modify the program of ii) to count the number
       of correct and incorrect responses typed by the student.
+      
       After the student types 10 answers, your program should calculate the
       percentage that are correct. If the percentage is lower than 75%, display
+      
       " Please ask your teacher for extra help .",
+      
       then reset the program so another student can try it. If the percentage is 75% or
       higher, display
+      
       " Congratulations, you are ready to go to the next level! ",
+      
       then reset the program so another student can try it.
+
+
+
+ASSIGNMENT 2 [Assignment 2.pdf](https://github.com/kitkatlky/Object-Oriented-Programming/files/7597734/Assignment.2.pdf)
+
+1.
+Write a class named GroceryList that represents a person's list of items to buy from the 
+market, and another class named GroceryItemOrder that represents a request to purchase 
+a particular item in a given quantity (example: 4 boxes of cookies).
+
+The GroceryList class should use an array field to store the grocery items, as well as 
+keeping track of its size (number of items in the list so far). Assume that a grocery list 
+will have no more than 10 items. A GroceryList object should have the following methods:
+
+        public GroceryList()
+        Constructs a new empty grocery list.
+        
+        public void add(GroceryItemOrder item)
+        Adds the given item order to this list, if the list is not full (has fewer than 10 items).
+        
+        public double getTotalCost()
+        Returns the total sum cost of all grocery item orders in this list.
+        
+The GroceryItemOrder class should store an item quantity and price per unit. 
+A GroceryItemOrder object should have the following methods:
+
+        public GroceryItemOrder(String name, int quantity, double pricePerUnit) 
+        Constructs an item order to purchase the item with the given name, in the given quantity,
+        which costs the given price per unit.
+        
+        public double getCost()
+        Returns the total cost of this item in its given quantity. For example, 4 boxes of 
+        cookies that are 2.30 per unit have a cost of 9.20.
+        
+        public void setQuantity(int quantity)
+        Sets this grocery item's quantity to be the given value.
+       
+2.
+Write a class named Date that represents a date consisting of a year, month, and day. 
+A Date object should have the following methods:
+
+        public Date(int year, int month, int day)
+        Constructs a new Date to represent the given date.
+
+        public void addDays(int days)
+        Moves this Date object forward in time by the given number of days.
+        
+        public void addWeeks(int weeks)
+        Moves this Date object forward in time by the given number of 7-day weeks.
+        
+        public int daysTo(Date other)
+        Returns the number of days that this Date must be adjusted to make it equal 
+        to the given other Date.
+        
+        public boolean equals(Object o)
+        Returns whether two Date objects represent the same calendar date.
+        
+        public int getDay()
+        Returns this Date's day value; for example, for the date 2006/07/22, returns 22.
+        
+        public int getMonth()
+        Returns this Date's month value; for example, for the date 2006/07/22, returns 7.
+        
+        public int getYear()
+        Returns this Date's year value; for example, for the date 2006/07/22, returns 2006.
+        
+Then, create the client code name myDate to use and test the Date class.
