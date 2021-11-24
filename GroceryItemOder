@@ -1,5 +1,4 @@
 /*
-1.
 Write a class named GroceryList that represents a person's list of items to buy from the 
 market, and another class named GroceryItemOrder that represents a request to purchase 
 a particular item in a given quantity (example: 4 boxes of cookies).
