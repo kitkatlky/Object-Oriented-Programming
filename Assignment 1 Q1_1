@@ -1,0 +1,24 @@
+import java.util.*;
+class Q1_1{
+	public static void main(String[] args){
+		System.out.print("This system has you, the user, choose a number between 0 and 10,");
+		System.out.println("then I, the computer, will try my best to guess it.");
+
+		char ans='n';
+		int count=1;
+		while(ans!='y'){
+		Random rand=new Random();
+		int num=rand.nextInt(10)+1;
+
+		System.out.println("Is it "+num+" ? (y/n)");
+		Scanner console=new Scanner(System.in);
+		ans=console.next().charAt(0);
+
+		if(ans !='y'){
+		count++;
+		}else{
+		System.out.println("I got your number of "+num+" correct in "+count+" guesses");
+		}
+	}
+}
+}
