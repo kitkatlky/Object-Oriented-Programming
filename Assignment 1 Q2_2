@@ -1,0 +1,59 @@
+import java.util.*;
+class Q2_2{
+public static void main(String[] args){
+	for(int i=1;i>0;i++){
+	question();
+}
+}
+
+public static void question(){
+	Random rand=new Random();
+		int num1=rand.nextInt(9)+1;
+		int num2=rand.nextInt(9)+1;
+
+		System.out.println("How much is "+num1+" times "+num2+" ?");
+		Scanner console=new Scanner(System.in);
+		int ans=console.nextInt();
+		int correct=num1*num2;
+
+		if(ans!=correct){
+			do{
+				wrong();
+				ans=console.nextInt();
+				}while(ans!=correct);
+		}
+		correct();
+
+}
+
+public static void wrong(){
+	Random rand=new Random();
+	int x=rand.nextInt(4)+1;
+
+	if (x==1){
+	System.out.println("No. Please try again.");
+	}else if(x==2){
+	System.out.println("Wrong. Try Once More");
+	}else if(x==3){
+	System.out.println("Don't  give up!");
+	}else{
+	System.out.println("No. Keep trying.");
+	}
+}
+
+public static void correct(){
+	Random rand=new Random();
+	int x=rand.nextInt(4)+1;
+
+	if (x==1){
+	System.out.println("Very good!");
+	}else if(x==2){
+	System.out.println("Excellent!");
+	}else if(x==3){
+	System.out.println("Nice Work!");
+	}else{
+	System.out.println("Keep up the good work!");
+	}
+}
+
+}
