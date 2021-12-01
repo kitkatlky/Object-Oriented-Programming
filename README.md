@@ -10,9 +10,12 @@ A class is a blueprint or prototype from which objects are created. This section
 
 source: The Java Tutorials
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ASSIGNMENT 1 [Assignment 1.pdf](https://github.com/kitkatlky/Object-Oriented-Programming/files/7597576/Assignment.1.pdf)
 
 Question 1.1
+
 i)  Write a program that plays a reverse guessing game with the user. The
     user thinks of a number between 1 and 10, and the computer repeatedly
     tries to guess it by guessing random numbers. It's fine for the computer
@@ -45,6 +48,7 @@ ii) Then, modify your program to consider having the user hint to the
     
     
 Question 1.2
+
 (Computer-Assisted Instruction) The use of computers in education is referred to
 as computer-assisted instruction (CAI).
 
@@ -63,6 +67,7 @@ i)  Write a program that will help an elementary school student learn multiplica
     A separate method should be used to generate each new question. This method
     should be called once when the application begins execution and each time the
     user answers the question correctly.
+    
     
 ii) One problem in CAI environments is student fatigue. This can be reduced by
     varying the computer’s responses to hold the student’s attention. Modify the
